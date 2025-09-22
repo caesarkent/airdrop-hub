@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ airdrop.name }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">Airdrop Hub</a>
+    <div class="d-flex gap-2">
+      <a class="btn btn-outline-light btn-sm" href="/submit">Submit Airdrop</a>
+      <a class="btn btn-outline-light btn-sm" href="/login">Admin Login</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <div class="card shadow-sm p-4">
+    <h3>{{ airdrop.name }}</h3>
+    <p class="text-muted">{{ airdrop.network }} · {{ airdrop.category }}</p>
+    <p>{{ airdrop.description }}</p>
+    <a href="{{ airdrop.link }}" target="_blank" class="btn btn-success">Join Airdrop</a>
+    <a href="/" class="btn btn-secondary">Back</a>
+  </div>
+</div>
+</body>
+</html>
