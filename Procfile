@@ -1,1 +1,1 @@
-web: gunicorn app:app --chdir airdrop_hub
+web: gunicorn app:app --chdir airdrop-hub
